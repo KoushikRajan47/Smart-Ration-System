@@ -1,0 +1,425 @@
+{
+  "dataset_name": "smart_ration_dataset_v2.csv",
+  "total_observations": 5110,
+  "total_variables": 23,
+  "numerical_variables": [
+    "Hour",
+    "Is_Weekend",
+    "Is_Holiday",
+    "Bookings",
+    "Previous_Crowd",
+    "Previous_Transactions",
+    "Staff_On_Duty",
+    "Counters_Available",
+    "Registered_Beneficiaries",
+    "Rice_Stock_kg",
+    "Wheat_Stock_kg",
+    "Sugar_Stock_kg",
+    "Customers",
+    "Rice_Customers",
+    "Wheat_Customers",
+    "Sugar_Customers",
+    "Rice_Demand_kg",
+    "Wheat_Demand_kg",
+    "Sugar_Demand_kg",
+    "Waiting_Time_Min"
+  ],
+  "categorical_variables": [
+    "Date",
+    "Day",
+    "Time_Slot"
+  ],
+  "missing_values": {
+    "Bookings": {
+      "count": 76,
+      "percentage": 1.49
+    },
+    "Previous_Crowd": {
+      "count": 61,
+      "percentage": 1.19
+    },
+    "Previous_Transactions": {
+      "count": 51,
+      "percentage": 1.0
+    },
+    "Rice_Stock_kg": {
+      "count": 40,
+      "percentage": 0.78
+    }
+  },
+  "duplicate_records": 0,
+  "outlier_analysis": {
+    "Hour": {
+      "q25": 10.0,
+      "q75": 17.0,
+      "iqr": 7.0,
+      "lower_bound": -0.5,
+      "upper_bound": 27.5,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "Is_Weekend": {
+      "q25": 0.0,
+      "q75": 1.0,
+      "iqr": 1.0,
+      "lower_bound": -1.5,
+      "upper_bound": 2.5,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "Is_Holiday": {
+      "q25": 0.0,
+      "q75": 0.0,
+      "iqr": 0.0,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "outlier_count": 98,
+      "outlier_pct": 1.92
+    },
+    "Bookings": {
+      "q25": 9.0,
+      "q75": 14.0,
+      "iqr": 5.0,
+      "lower_bound": 1.5,
+      "upper_bound": 21.5,
+      "outlier_count": 70,
+      "outlier_pct": 1.37
+    },
+    "Previous_Crowd": {
+      "q25": 22.0,
+      "q75": 32.0,
+      "iqr": 10.0,
+      "lower_bound": 7.0,
+      "upper_bound": 47.0,
+      "outlier_count": 42,
+      "outlier_pct": 0.82
+    },
+    "Previous_Transactions": {
+      "q25": 18.0,
+      "q75": 28.0,
+      "iqr": 10.0,
+      "lower_bound": 3.0,
+      "upper_bound": 43.0,
+      "outlier_count": 26,
+      "outlier_pct": 0.51
+    },
+    "Staff_On_Duty": {
+      "q25": 3.0,
+      "q75": 3.0,
+      "iqr": 0.0,
+      "lower_bound": 3.0,
+      "upper_bound": 3.0,
+      "outlier_count": 2003,
+      "outlier_pct": 39.2
+    },
+    "Counters_Available": {
+      "q25": 2.0,
+      "q75": 3.0,
+      "iqr": 1.0,
+      "lower_bound": 0.5,
+      "upper_bound": 4.5,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "Registered_Beneficiaries": {
+      "q25": 803.0,
+      "q75": 894.0,
+      "iqr": 91.0,
+      "lower_bound": 666.5,
+      "upper_bound": 1030.5,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "Rice_Stock_kg": {
+      "q25": 476.0,
+      "q75": 551.0,
+      "iqr": 75.0,
+      "lower_bound": 363.5,
+      "upper_bound": 663.5,
+      "outlier_count": 32,
+      "outlier_pct": 0.63
+    },
+    "Wheat_Stock_kg": {
+      "q25": 149.0,
+      "q75": 184.0,
+      "iqr": 35.0,
+      "lower_bound": 96.5,
+      "upper_bound": 236.5,
+      "outlier_count": 19,
+      "outlier_pct": 0.37
+    },
+    "Sugar_Stock_kg": {
+      "q25": 82.0,
+      "q75": 103.0,
+      "iqr": 21.0,
+      "lower_bound": 50.5,
+      "upper_bound": 134.5,
+      "outlier_count": 34,
+      "outlier_pct": 0.67
+    },
+    "Customers": {
+      "q25": 37.0,
+      "q75": 61.0,
+      "iqr": 24.0,
+      "lower_bound": 1.0,
+      "upper_bound": 97.0,
+      "outlier_count": 7,
+      "outlier_pct": 0.14
+    },
+    "Rice_Customers": {
+      "q25": 33.0,
+      "q75": 53.0,
+      "iqr": 20.0,
+      "lower_bound": 3.0,
+      "upper_bound": 83.0,
+      "outlier_count": 17,
+      "outlier_pct": 0.33
+    },
+    "Wheat_Customers": {
+      "q25": 23.0,
+      "q75": 38.0,
+      "iqr": 15.0,
+      "lower_bound": 0.5,
+      "upper_bound": 60.5,
+      "outlier_count": 24,
+      "outlier_pct": 0.47
+    },
+    "Sugar_Customers": {
+      "q25": 19.0,
+      "q75": 31.0,
+      "iqr": 12.0,
+      "lower_bound": 1.0,
+      "upper_bound": 49.0,
+      "outlier_count": 35,
+      "outlier_pct": 0.68
+    },
+    "Rice_Demand_kg": {
+      "q25": 136.1,
+      "q75": 224.07,
+      "iqr": 87.97,
+      "lower_bound": 4.14,
+      "upper_bound": 356.04,
+      "outlier_count": 21,
+      "outlier_pct": 0.41
+    },
+    "Wheat_Demand_kg": {
+      "q25": 55.1,
+      "q75": 92.2,
+      "iqr": 37.1,
+      "lower_bound": -0.55,
+      "upper_bound": 147.85,
+      "outlier_count": 40,
+      "outlier_pct": 0.78
+    },
+    "Sugar_Demand_kg": {
+      "q25": 18.3,
+      "q75": 30.9,
+      "iqr": 12.6,
+      "lower_bound": -0.6,
+      "upper_bound": 49.8,
+      "outlier_count": 47,
+      "outlier_pct": 0.92
+    },
+    "Waiting_Time_Min": {
+      "q25": 5.9,
+      "q75": 11.2,
+      "iqr": 5.3,
+      "lower_bound": -2.05,
+      "upper_bound": 19.15,
+      "outlier_count": 86,
+      "outlier_pct": 1.68
+    }
+  },
+  "descriptive_statistics": {
+    "Hour": {
+      "mean": 13.29,
+      "std": 3.37,
+      "min": 9.0,
+      "25%": 10.0,
+      "50%": 12.0,
+      "75%": 17.0,
+      "max": 18.0
+    },
+    "Is_Weekend": {
+      "mean": 0.28,
+      "std": 0.45,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Is_Holiday": {
+      "mean": 0.02,
+      "std": 0.14,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "Bookings": {
+      "mean": 11.61,
+      "std": 4.04,
+      "min": 1.0,
+      "25%": 9.0,
+      "50%": 11.0,
+      "75%": 14.0,
+      "max": 28.0
+    },
+    "Previous_Crowd": {
+      "mean": 26.87,
+      "std": 7.69,
+      "min": 2.0,
+      "25%": 22.0,
+      "50%": 27.0,
+      "75%": 32.0,
+      "max": 56.0
+    },
+    "Previous_Transactions": {
+      "mean": 22.91,
+      "std": 7.4,
+      "min": 1.0,
+      "25%": 18.0,
+      "50%": 23.0,
+      "75%": 28.0,
+      "max": 55.0
+    },
+    "Staff_On_Duty": {
+      "mean": 3.1,
+      "std": 0.62,
+      "min": 2.0,
+      "25%": 3.0,
+      "50%": 3.0,
+      "75%": 3.0,
+      "max": 4.0
+    },
+    "Counters_Available": {
+      "mean": 2.36,
+      "std": 0.72,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 3.0,
+      "max": 3.0
+    },
+    "Registered_Beneficiaries": {
+      "mean": 848.99,
+      "std": 55.29,
+      "min": 710.0,
+      "25%": 803.0,
+      "50%": 849.0,
+      "75%": 894.0,
+      "max": 1000.0
+    },
+    "Rice_Stock_kg": {
+      "mean": 514.11,
+      "std": 55.11,
+      "min": 312.0,
+      "25%": 476.0,
+      "50%": 515.0,
+      "75%": 551.0,
+      "max": 732.0
+    },
+    "Wheat_Stock_kg": {
+      "mean": 166.19,
+      "std": 25.4,
+      "min": 75.0,
+      "25%": 149.0,
+      "50%": 166.0,
+      "75%": 184.0,
+      "max": 255.0
+    },
+    "Sugar_Stock_kg": {
+      "mean": 92.13,
+      "std": 15.41,
+      "min": 30.0,
+      "25%": 82.0,
+      "50%": 92.0,
+      "75%": 103.0,
+      "max": 153.0
+    },
+    "Customers": {
+      "mean": 49.07,
+      "std": 16.39,
+      "min": 5.0,
+      "25%": 37.0,
+      "50%": 48.0,
+      "75%": 61.0,
+      "max": 105.0
+    },
+    "Rice_Customers": {
+      "mean": 43.15,
+      "std": 14.49,
+      "min": 4.0,
+      "25%": 33.0,
+      "50%": 42.0,
+      "75%": 53.0,
+      "max": 95.0
+    },
+    "Wheat_Customers": {
+      "mean": 31.08,
+      "std": 10.66,
+      "min": 3.0,
+      "25%": 23.0,
+      "50%": 30.0,
+      "75%": 38.0,
+      "max": 74.0
+    },
+    "Sugar_Customers": {
+      "mean": 25.05,
+      "std": 8.88,
+      "min": 3.0,
+      "25%": 19.0,
+      "50%": 24.0,
+      "75%": 31.0,
+      "max": 58.0
+    },
+    "Rice_Demand_kg": {
+      "mean": 181.44,
+      "std": 62.64,
+      "min": 13.5,
+      "25%": 136.1,
+      "50%": 177.55,
+      "75%": 224.07,
+      "max": 468.4
+    },
+    "Wheat_Demand_kg": {
+      "mean": 74.65,
+      "std": 27.06,
+      "min": 8.2,
+      "25%": 55.1,
+      "50%": 72.3,
+      "75%": 92.2,
+      "max": 199.8
+    },
+    "Sugar_Demand_kg": {
+      "mean": 25.04,
+      "std": 9.25,
+      "min": 3.3,
+      "25%": 18.3,
+      "50%": 24.2,
+      "75%": 30.9,
+      "max": 62.5
+    },
+    "Waiting_Time_Min": {
+      "mean": 8.81,
+      "std": 4.08,
+      "min": 2.0,
+      "25%": 5.9,
+      "50%": 8.4,
+      "75%": 11.2,
+      "max": 29.5
+    }
+  },
+  "generated_figures": [
+    "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\figures\\1_customer_distribution.png",
+    "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\figures\\2_customers_by_hour.png",
+    "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\figures\\3_customers_by_day.png",
+    "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\figures\\4_bookings_vs_customers.png",
+    "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\figures\\5_stock_distribution.png",
+    "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\figures\\6_commodity_demand_distribution.png",
+    "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\figures\\7_correlation_heatmap.png",
+    "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\figures\\8_waiting_time_distribution.png"
+  ]
+}

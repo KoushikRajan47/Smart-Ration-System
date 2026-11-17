@@ -1,0 +1,382 @@
+{
+  "crowd": {
+    "display_name": "Customer Crowd Prediction",
+    "target": "Customers",
+    "best_algorithm": "Gradient Boosting",
+    "best_metrics": {
+      "algorithm": "Gradient Boosting",
+      "train_mae": 3.538,
+      "train_rmse": 4.461,
+      "train_r2": 0.9265,
+      "test_mae": 4.173,
+      "test_mse": 27.305,
+      "test_rmse": 5.225,
+      "test_r2": 0.8947,
+      "cv_r2": 0.8779,
+      "cv_rmse": 5.754,
+      "overfit_gap_r2": 0.0319
+    },
+    "comparison": [
+      {
+        "algorithm": "Linear Regression",
+        "train_mae": 5.045,
+        "train_rmse": 6.333,
+        "train_r2": 0.8519,
+        "test_mae": 4.884,
+        "test_mse": 37.733,
+        "test_rmse": 6.143,
+        "test_r2": 0.8544,
+        "cv_r2": 0.8482,
+        "cv_rmse": 6.421,
+        "overfit_gap_r2": -0.0025
+      },
+      {
+        "algorithm": "Random Forest",
+        "train_mae": 2.45,
+        "train_rmse": 3.099,
+        "train_r2": 0.9645,
+        "test_mae": 4.347,
+        "test_mse": 29.544,
+        "test_rmse": 5.435,
+        "test_r2": 0.886,
+        "cv_r2": 0.8737,
+        "cv_rmse": 5.854,
+        "overfit_gap_r2": 0.0785
+      },
+      {
+        "algorithm": "Extra Trees",
+        "train_mae": 1.611,
+        "train_rmse": 2.122,
+        "train_r2": 0.9834,
+        "test_mae": 4.334,
+        "test_mse": 29.249,
+        "test_rmse": 5.408,
+        "test_r2": 0.8872,
+        "cv_r2": 0.8789,
+        "cv_rmse": 5.737,
+        "overfit_gap_r2": 0.0962
+      },
+      {
+        "algorithm": "Gradient Boosting",
+        "train_mae": 3.538,
+        "train_rmse": 4.461,
+        "train_r2": 0.9265,
+        "test_mae": 4.173,
+        "test_mse": 27.305,
+        "test_rmse": 5.225,
+        "test_r2": 0.8947,
+        "cv_r2": 0.8779,
+        "cv_rmse": 5.754,
+        "overfit_gap_r2": 0.0319
+      }
+    ],
+    "plots": {
+      "actual_vs_pred": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\crowd_actual_vs_pred.png",
+      "residuals": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\crowd_residuals.png"
+    }
+  },
+  "rice_demand": {
+    "display_name": "Rice Demand Prediction (kg)",
+    "target": "Rice_Demand_kg",
+    "best_algorithm": "Gradient Boosting",
+    "best_metrics": {
+      "algorithm": "Gradient Boosting",
+      "train_mae": 16.916,
+      "train_rmse": 21.439,
+      "train_r2": 0.8846,
+      "test_mae": 20.303,
+      "test_mse": 665.955,
+      "test_rmse": 25.806,
+      "test_r2": 0.8195,
+      "cv_r2": 0.7927,
+      "cv_rmse": 28.799,
+      "overfit_gap_r2": 0.0651
+    },
+    "comparison": [
+      {
+        "algorithm": "Linear Regression",
+        "train_mae": 23.059,
+        "train_rmse": 29.149,
+        "train_r2": 0.7866,
+        "test_mae": 21.674,
+        "test_mse": 759.171,
+        "test_rmse": 27.553,
+        "test_r2": 0.7942,
+        "cv_r2": 0.7811,
+        "cv_rmse": 29.647,
+        "overfit_gap_r2": -0.0076
+      },
+      {
+        "algorithm": "Random Forest",
+        "train_mae": 11.606,
+        "train_rmse": 14.688,
+        "train_r2": 0.9458,
+        "test_mae": 20.787,
+        "test_mse": 695.795,
+        "test_rmse": 26.378,
+        "test_r2": 0.8114,
+        "cv_r2": 0.7979,
+        "cv_rmse": 28.476,
+        "overfit_gap_r2": 0.1345
+      },
+      {
+        "algorithm": "Extra Trees",
+        "train_mae": 7.312,
+        "train_rmse": 9.62,
+        "train_r2": 0.9768,
+        "test_mae": 20.781,
+        "test_mse": 696.965,
+        "test_rmse": 26.4,
+        "test_r2": 0.811,
+        "cv_r2": 0.802,
+        "cv_rmse": 28.192,
+        "overfit_gap_r2": 0.1657
+      },
+      {
+        "algorithm": "Gradient Boosting",
+        "train_mae": 16.916,
+        "train_rmse": 21.439,
+        "train_r2": 0.8846,
+        "test_mae": 20.303,
+        "test_mse": 665.955,
+        "test_rmse": 25.806,
+        "test_r2": 0.8195,
+        "cv_r2": 0.7927,
+        "cv_rmse": 28.799,
+        "overfit_gap_r2": 0.0651
+      }
+    ],
+    "plots": {
+      "actual_vs_pred": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\rice_demand_actual_vs_pred.png",
+      "residuals": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\rice_demand_residuals.png"
+    }
+  },
+  "wheat_demand": {
+    "display_name": "Wheat Demand Prediction (kg)",
+    "target": "Wheat_Demand_kg",
+    "best_algorithm": "Gradient Boosting",
+    "best_metrics": {
+      "algorithm": "Gradient Boosting",
+      "train_mae": 8.469,
+      "train_rmse": 10.848,
+      "train_r2": 0.8425,
+      "test_mae": 10.326,
+      "test_mse": 171.528,
+      "test_rmse": 13.097,
+      "test_r2": 0.7444,
+      "cv_r2": 0.7372,
+      "cv_rmse": 14.054,
+      "overfit_gap_r2": 0.0981
+    },
+    "comparison": [
+      {
+        "algorithm": "Linear Regression",
+        "train_mae": 11.225,
+        "train_rmse": 14.289,
+        "train_r2": 0.7267,
+        "test_mae": 10.775,
+        "test_mse": 182.731,
+        "test_rmse": 13.518,
+        "test_r2": 0.7277,
+        "cv_r2": 0.7255,
+        "cv_rmse": 14.37,
+        "overfit_gap_r2": -0.001
+      },
+      {
+        "algorithm": "Random Forest",
+        "train_mae": 5.872,
+        "train_rmse": 7.474,
+        "train_r2": 0.9252,
+        "test_mae": 10.478,
+        "test_mse": 175.678,
+        "test_rmse": 13.254,
+        "test_r2": 0.7382,
+        "cv_r2": 0.7365,
+        "cv_rmse": 14.075,
+        "overfit_gap_r2": 0.187
+      },
+      {
+        "algorithm": "Extra Trees",
+        "train_mae": 3.789,
+        "train_rmse": 5.057,
+        "train_r2": 0.9658,
+        "test_mae": 10.563,
+        "test_mse": 179.476,
+        "test_rmse": 13.397,
+        "test_r2": 0.7326,
+        "cv_r2": 0.74,
+        "cv_rmse": 13.983,
+        "overfit_gap_r2": 0.2332
+      },
+      {
+        "algorithm": "Gradient Boosting",
+        "train_mae": 8.469,
+        "train_rmse": 10.848,
+        "train_r2": 0.8425,
+        "test_mae": 10.326,
+        "test_mse": 171.528,
+        "test_rmse": 13.097,
+        "test_r2": 0.7444,
+        "cv_r2": 0.7372,
+        "cv_rmse": 14.054,
+        "overfit_gap_r2": 0.0981
+      }
+    ],
+    "plots": {
+      "actual_vs_pred": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\wheat_demand_actual_vs_pred.png",
+      "residuals": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\wheat_demand_residuals.png"
+    }
+  },
+  "sugar_demand": {
+    "display_name": "Sugar Demand Prediction (kg)",
+    "target": "Sugar_Demand_kg",
+    "best_algorithm": "Gradient Boosting",
+    "best_metrics": {
+      "algorithm": "Gradient Boosting",
+      "train_mae": 3.056,
+      "train_rmse": 3.877,
+      "train_r2": 0.8266,
+      "test_mae": 3.623,
+      "test_mse": 21.415,
+      "test_rmse": 4.628,
+      "test_r2": 0.7371,
+      "cv_r2": 0.7087,
+      "cv_rmse": 5.01,
+      "overfit_gap_r2": 0.0895
+    },
+    "comparison": [
+      {
+        "algorithm": "Linear Regression",
+        "train_mae": 3.939,
+        "train_rmse": 5.031,
+        "train_r2": 0.708,
+        "test_mae": 3.781,
+        "test_mse": 22.891,
+        "test_rmse": 4.784,
+        "test_r2": 0.719,
+        "cv_r2": 0.7012,
+        "cv_rmse": 5.074,
+        "overfit_gap_r2": -0.011
+      },
+      {
+        "algorithm": "Random Forest",
+        "train_mae": 2.131,
+        "train_rmse": 2.7,
+        "train_r2": 0.9159,
+        "test_mae": 3.725,
+        "test_mse": 22.429,
+        "test_rmse": 4.736,
+        "test_r2": 0.7246,
+        "cv_r2": 0.704,
+        "cv_rmse": 5.05,
+        "overfit_gap_r2": 0.1913
+      },
+      {
+        "algorithm": "Extra Trees",
+        "train_mae": 1.361,
+        "train_rmse": 1.79,
+        "train_r2": 0.963,
+        "test_mae": 3.766,
+        "test_mse": 22.806,
+        "test_rmse": 4.776,
+        "test_r2": 0.72,
+        "cv_r2": 0.7131,
+        "cv_rmse": 4.97,
+        "overfit_gap_r2": 0.243
+      },
+      {
+        "algorithm": "Gradient Boosting",
+        "train_mae": 3.056,
+        "train_rmse": 3.877,
+        "train_r2": 0.8266,
+        "test_mae": 3.623,
+        "test_mse": 21.415,
+        "test_rmse": 4.628,
+        "test_r2": 0.7371,
+        "cv_r2": 0.7087,
+        "cv_rmse": 5.01,
+        "overfit_gap_r2": 0.0895
+      }
+    ],
+    "plots": {
+      "actual_vs_pred": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\sugar_demand_actual_vs_pred.png",
+      "residuals": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\sugar_demand_residuals.png"
+    }
+  },
+  "waiting_time": {
+    "display_name": "Beneficiary Waiting Time Prediction (min)",
+    "target": "Waiting_Time_Min",
+    "best_algorithm": "Gradient Boosting",
+    "best_metrics": {
+      "algorithm": "Gradient Boosting",
+      "train_mae": 1.532,
+      "train_rmse": 1.93,
+      "train_r2": 0.7759,
+      "test_mae": 1.923,
+      "test_mse": 5.654,
+      "test_rmse": 2.378,
+      "test_r2": 0.6588,
+      "cv_r2": 0.5966,
+      "cv_rmse": 2.611,
+      "overfit_gap_r2": 0.1172
+    },
+    "comparison": [
+      {
+        "algorithm": "Linear Regression",
+        "train_mae": 1.984,
+        "train_rmse": 2.515,
+        "train_r2": 0.6195,
+        "test_mae": 2.024,
+        "test_mse": 6.59,
+        "test_rmse": 2.567,
+        "test_r2": 0.6023,
+        "cv_r2": 0.6126,
+        "cv_rmse": 2.565,
+        "overfit_gap_r2": 0.0172
+      },
+      {
+        "algorithm": "Random Forest",
+        "train_mae": 1.136,
+        "train_rmse": 1.433,
+        "train_r2": 0.8765,
+        "test_mae": 1.959,
+        "test_mse": 5.926,
+        "test_rmse": 2.434,
+        "test_r2": 0.6424,
+        "cv_r2": 0.6334,
+        "cv_rmse": 2.495,
+        "overfit_gap_r2": 0.2342
+      },
+      {
+        "algorithm": "Extra Trees",
+        "train_mae": 0.797,
+        "train_rmse": 1.049,
+        "train_r2": 0.9338,
+        "test_mae": 1.983,
+        "test_mse": 6.086,
+        "test_rmse": 2.467,
+        "test_r2": 0.6327,
+        "cv_r2": 0.6255,
+        "cv_rmse": 2.522,
+        "overfit_gap_r2": 0.3011
+      },
+      {
+        "algorithm": "Gradient Boosting",
+        "train_mae": 1.532,
+        "train_rmse": 1.93,
+        "train_r2": 0.7759,
+        "test_mae": 1.923,
+        "test_mse": 5.654,
+        "test_rmse": 2.378,
+        "test_r2": 0.6588,
+        "cv_r2": 0.5966,
+        "cv_rmse": 2.611,
+        "overfit_gap_r2": 0.1172
+      }
+    ],
+    "plots": {
+      "actual_vs_pred": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\waiting_time_actual_vs_pred.png",
+      "residuals": "C:\\Users\\Koushik Rajan\\Downloads\\Documents\\projects\\Smart Ration System\\SmartRationSystem\\data\\reports\\model_plots\\waiting_time_residuals.png"
+    }
+  }
+}
